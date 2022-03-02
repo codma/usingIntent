@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:layout_marginTop="100dp"
+    android:layout_marginRight="10dp"
+    android:layout_marginLeft="10dp">
+
+    <Button
+        android:id="@+id/btnSMS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SMS 보내기"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/btnInternet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="인터넷 이동"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnSMS" />
+    <Button
+        android:id="@+id/btnMap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Map 연동"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnInternet" />
+    <Button
+        android:id="@+id/btnGit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="깃 레파지토리"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnMap" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
