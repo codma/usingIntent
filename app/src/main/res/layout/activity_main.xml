@@ -22,7 +22,7 @@
         android:id="@+id/btnInternet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="인터넷 이동"
+        android:text="Trenbe에서 쇼핑"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnSMS" />
@@ -38,7 +38,7 @@
         android:id="@+id/btnGit"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="깃 레파지토리"
+        android:text="깃허브 이동"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnMap" />

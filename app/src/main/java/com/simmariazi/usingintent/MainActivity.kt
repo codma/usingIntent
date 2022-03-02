@@ -7,11 +7,13 @@ import android.os.Bundle
 import com.simmariazi.usingintent.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
-    val binding: ActivityMainBinding = ActivityMainBinding.inflate(layoutInflater)
+    private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(binding.root)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
         setUpUI()
     }
     private fun setUpUI(){
@@ -32,7 +34,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
         binding.btnGit.setOnClickListener{
-            val uri = Uri.parse("git:")
+            val uri = Uri.parse("https://github.com/codma/usingIntent.git")
             val intent = Intent(Intent.ACTION_VIEW,uri)
             startActivity(intent)
         }
